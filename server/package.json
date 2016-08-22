@@ -4,6 +4,7 @@
   "description": "socket.io long polling service",
   "dependencies": {
     "express": "^4.14.0",
-    "socket.io": "^1.4.8"
+    "socket.io": "^1.4.8",
+    "socket.io-client": "^1.4.8"
   }
 }
