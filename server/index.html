@@ -55,7 +55,7 @@
           socket.emit("disconnect", "bye");
         socket = io(channel);
         $('#messages').append($('<li>').text("switching to channel: " + channel));
-        socket.once('server', function(msg){
+        socket.on('server', function(msg){
           $('#messages').append($('<li>').text(msg));
         });
       });

@@ -25,7 +25,7 @@ app.get('/channel/:name', function(req, res){
 
     console.log(ns + ': a user connected');
     socket.join("default");
-    socket.once('signal', function(msg){
+    socket.on('signal', function(msg){
       console.log(ns + ': message:' + msg +" "+ socket);
       socket.broadcast.to('default').emit("server", ns + ":echo " + msg);
       // everyone including the sender
