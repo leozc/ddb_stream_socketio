@@ -1,0 +1,9 @@
+{
+  "name": "socketIO",
+  "version": "0.1",
+  "description": "socket.io long polling service",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.4.8"
+  }
+}
